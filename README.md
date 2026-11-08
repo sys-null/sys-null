@@ -1,4 +1,3 @@
-<div align="center">
 
 ```bash
 ┌─[sys-null@secops-vps]─[~]
