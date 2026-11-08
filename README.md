@@ -1,16 +1,24 @@
-## Hi there 👋
+<div align="center">
 
-<!--
-**sys-null/sys-null** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+```bash
+root@sys-null:~# ./init-profile.sh --mode=secure
+[+] Initializing SecOps environment...
+[+] Core Identity : sys-null
+[+] Location      : 127.0.0.1 [MASKED]
+[+] Status        : ONLINE (OPSEC Optimal)<
 
-Here are some ideas to get you started:
+$ cat /etc/system-specs.conf
+[CORE_ENVIRONMENT]
+OS_KERNEL   = Linux (Hardened POSIX Headless)
+LANGUAGES   = Python 3 · Shell (Bash/Zsh) · TypeScript
+INFRA_OPS   = Docker · Nginx · Systemd · Linux VPS
+SECURITY    = GnuPG · Rate-Limiting · Firewall Hardening
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+$ ls -la ./modules/
+[1] vps-hardening    -> POSIX shell scripts for server hardening & Nginx config [STABLE]
+[2] sys-telemetry    -> Headless monitoring & system metrics dashboard           [ACTIVE]
+[3] event-dispatcher -> Asynchronous webhook receiver & log parser              [ACTIVE]
+[4] api-proxy-cli    -> Rate-limited HTTP proxy & API client utility            [STABLE]
+
+root@sys-null:~# exit
+Connection to github.com closed. Clean session.
